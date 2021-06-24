@@ -1,0 +1,462 @@
+<div id="container"></div>
+
+<script>
+  var data = [
+  {
+    "annual": "63rd",
+    "year": "2020",
+    "song": {
+      "title": "I Can't Breathe",
+      "artist": "H.E.R.",
+      "wiki": "I_Can't_Breathe_(H.E.R._song)",
+      "video": "IRZWiqBHYaY",
+      "template": "",
+      "hint": ""
+    },
+    "record": {
+      "title": "Everything I Wanted",
+      "artist": "Billie Eilish",
+      "wiki": "Everything_I_Wanted",
+      "video": "qCTMq7xvdXU",
+      "template": "1Nt90xVf2F79JjKF18JMp5uGWEZUdwEgVObu9mXbXQn4",
+      "hint": "billie-eilish/everything-i-wanted.html"
+    }
+  },
+  {
+    "annual": "62nd",
+    "year": "2019",
+    "song": {
+      "title": "Bad Guy",
+      "artist": "Billie Eilish",
+      "wiki": "Bad_Guy_(Billie_Eilish_song)",
+      "video": "ZD6rXLXZOEI",
+      "template": "1gAfH_Qm8DQD5BurWm6SmwvqP6qVIes6AlhXEs4qsRIQ",
+      "hint": "billie-eilish/bad-guy.html"
+    },
+    "record": false
+  },
+  {
+    "annual": "61st",
+    "year": "2018",
+    "song": {
+      "title": "This Is America",
+      "artist": "Childish Gambino",
+      "wiki": "This_Is_America_(song)",
+      "video": "ddJqNY__9U8",
+      "template": "1rPMwRq1oJmd-OLhb_hb01Pgc-1bZOXH7DgBpHit8CRs",
+      "hint": "childish-gambino/this-is-america.html"
+    },
+    "record": false
+  },
+  {
+    "annual": "60th",
+    "year": "2017",
+    "song": {
+      "title": "That's What I Like",
+      "artist": "Bruno Mars",
+      "wiki": "That's_What_I_Like_(Bruno_Mars_song)",
+      "video": "pt3RScxz0v8",
+      "template": "1-LL3D4yFuMb0NmZCOvup_alypoKMTmX32DZjAEDeZKs",
+      "hint": "bruno-mars/that-s-what-i-like.html"
+    },
+    "record": {
+      "title": "24K Magic",
+      "artist": "Bruno Mars",
+      "wiki": "24K_Magic_(song)",
+      "video": "Gwb3XMfrYDk",
+      "template": "1WbyZDdb6h9XknDpCCntErCfKuU69-2rj4s1iESvEXWg",
+      "hint": "bruno-mars/24k-magic.html"
+    }
+  },
+  {
+    "annual": "59th",
+    "year": "2016",
+    "song": {
+      "title": "Hello",
+      "artist": "Adele",
+      "wiki": "Hello_(Adele_song)",
+      "video": "a9IbmRb1KEc",
+      "template": "1KYTpA2qyfuINYyipI0v-ijdUHPipxsQbpSI8ZUIZFYw",
+      "hint": "adele/hello.html"
+    },
+    "record": false
+  },
+  {
+    "annual": "58th",
+    "year": "2015",
+    "song": {
+      "title": "Thinking Out Loud",
+      "artist": "Ed Sheeran",
+      "wiki": "Thinking_Out_Loud",
+      "video": "WpyfrixXBqU",
+      "template": "1_bx4kiTHqrLtS9rPJOyosRFhdzNZ9c2eC5AjrH0ov84",
+      "hint": "ed-sheeran/thinking-out-loud.html"
+    },
+    "record": {
+      "title": "Uptown Funk",
+      "artist": "Mark Ronson ft. Bruno Mars",
+      "wiki": "Uptown_Funk",
+      "video": "0n-JWLLp2l8",
+      "template": "17wgrxd7TFdsKx_MuwmShaN0fnvz5wjLDTDHKommgVio",
+      "hint": "bruno-mars/uptown-funk.html"
+    }
+  },
+  {
+    "annual": "57th",
+    "year": "2014",
+    "song": {
+      "title": "Stay with Me",
+      "artist": "Sam Smith",
+      "wiki": "Stay_with_Me_(Sam_Smith_song)",
+      "video": "nLQFBq9ykjI",
+      "template": "1qPWSDZ8UsX_namUF4qEVebSvkdBTv1kr5nMhij-0Yr4",
+      "hint": "sam-smith/stay-with-me.html"
+    },
+    "record": {
+      "title": "Stay with Me (Darkchild Version)",
+      "artist": "Sam Smith",
+      "wiki": "Stay_with_Me_(Sam_Smith_song)",
+      "video": "s-rGtrkKoH8",
+      "template": "1qPWSDZ8UsX_namUF4qEVebSvkdBTv1kr5nMhij-0Yr4",
+      "hint": "sam-smith/stay-with-me.html"
+    }
+  },
+  {
+    "annual": "56th",
+    "year": "2013",
+    "song": {
+      "title": "Royals",
+      "artist": "Lorde",
+      "wiki": "Royals_(song)",
+      "video": "ncgsL1GCFms",
+      "template": "1CbcxzcVJduyVd7l-07oxmBoSPhcmaFO_j4lK9y5Bsz4",
+      "hint": "lorde/royals.html"
+    },
+    "record": {
+      "title": "Get Lucky",
+      "artist": "Daft Punk ft. Pharrell Williams & Nile Rodgers",
+      "wiki": "Get_Lucky_(Daft_Punk_song)",
+      "video": "5NV6Rdv1a3I",
+      "template": "1qK8xUp9lRyWzdJxV6S2f03Lkhvnqxy-tjkIYL-J1NlY",
+      "hint": "daft-punk/get-lucky.html"
+    }
+  },
+  {
+    "annual": "55th",
+    "year": "2012",
+    "song": {
+      "title": "We Are Young",
+      "artist": "Fun ft. Janelle Monáe",
+      "wiki": "We_Are_Young",
+      "video": "SlCXgj2bS_A",
+      "template": "1UmlVhUffpxw17-TsV82oCI_MGXY1efRc_0TfC4tsWrw",
+      "hint": "fun/we-are-young.html"
+    },
+    "record": {
+      "title": "Somebody That I Used to Know",
+      "artist": "Gotye ft. Kimbra",
+      "wiki": "Somebody_That_I_Used_to_Know",
+      "video": "iPRYGFgGMS8",
+      "template": "1kRjlZyaCHTMKtxdG91ixsjZpYIoGQ6jbY5FxrZ6mH4c",
+      "hint": "gotye/somebody-that-i-used-to-know.html"
+    }
+  },
+  {
+    "annual": "54th",
+    "year": "2011",
+    "song": {
+      "title": "Rolling in the Deep",
+      "artist": "Adele",
+      "wiki": "Rolling_in_the_Deep",
+      "video": "NXXT9RFKO5E",
+      "template": "1rfB7tOR2D0Biq4MItYxhzibTqhu3aU-p9FakWm-74G4",
+      "hint": "adele/rolling-in-the-deep.html"
+    },
+    "record": false
+  },
+  {
+    "annual": "53rd",
+    "year": "2010",
+    "song": {
+      "title": "Need You Now",
+      "artist": "Lady Antebellum",
+      "wiki": "Need_You_Now_(Lady_Antebellum_song)",
+      "video": "fbq7ZM0du-c",
+      "template": "1eu7gj3WAS0JYGsFuI6elKz2qqTQo2eWukuZgnFvEv7g",
+      "hint": "lady-a/need-you-now.html"
+    },
+    "record": false
+  },
+  {
+    "annual": "52nd",
+    "year": "2009",
+    "song": {
+      "title": "Single Ladies (Put a Ring on It)",
+      "artist": "Beyoncé",
+      "wiki": "Single_Ladies_(Put_a_Ring_on_It)",
+      "video": "CQpTT64uFcA",
+      "template": "1B1ov9_iV70Xj13EVA493n0hQXz5QOh0lW7dMp4_O3Xw",
+      "hint": "beyonce/single-ladies-put-a-ring-on-it.html"
+    },
+    "record": {
+      "title": "Use Somebody",
+      "artist": "Kings of Leon",
+      "wiki": "Use_Somebody",
+      "video": "JXbSHCmO0yQ",
+      "template": "1-1J1iQTRtRTCQYdrUpFFT0Hl9QmbJSKQCYCljJNoPvY",
+      "hint": "kings-of-leon/use-somebody.html"
+    }
+  },
+  {
+    "annual": "51st",
+    "year": "2008",
+    "song": {
+      "title": "Viva la Vida",
+      "artist": "Coldplay",
+      "wiki": "Viva_la_Vida",
+      "video": "MY4eEOB1wSI",
+      "template": "1yjtq4DYb3xPOpjG3QRStqumwqrpMpTJj4VrEcx4WilU",
+      "hint": "coldplay/viva-la-vida.html"
+    },
+    "record": {
+      "title": "Please Read the Letter",
+      "artist": "Robert Plant & Alison Krauss",
+      "wiki": "Please_Read_the_Letter",
+      "video": "rjs0p5FWpzc",
+      "template": "",
+      "hint": ""
+    }
+  },
+  {
+    "annual": "50th",
+    "year": "2007",
+    "song": {
+      "title": "Rehab",
+      "artist": "Amy Winehouse",
+      "wiki": "Rehab_(Amy_Winehouse_song)",
+      "video": "XOjDJRiUeGE",
+      "template": "1ursb_Qjv1YBzXYDO71ys2hx6HeQ4zKbAvjKB77f6rh8",
+      "hint": "amy-winehouse/rehab.html"
+    },
+    "record": false
+  },
+  {
+    "annual": "49th",
+    "year": "2006",
+    "song": {
+      "title": "Not Ready to Make Nice",
+      "artist": "Dixie Chicks",
+      "wiki": "Not_Ready_to_Make_Nice",
+      "video": "-6Bj_RH2zSE",
+      "template": "1Yfj2081JyMG8PP4T6rc2OD8eeK-qVPf6PTyvmXTDtPQ",
+      "hint": "the-chicks/not-ready-to-make-nice.html"
+    },
+    "record": false
+  },
+  {
+    "annual": "48th",
+    "year": "2005",
+    "song": {
+      "title": "Sometimes You Can't Make It on Your Own",
+      "artist": "U2",
+      "wiki": "Sometimes_You_Can't_Make_It_on_Your_Own",
+      "video": "TM6e-QaS_a0",
+      "template": "1XM3KQqzvM9ldR2OCMPpTjfhzoE7tUenRIKVUaCoYOc8",
+      "hint": "u2/sometimes-you-can-t-make-it-on-your-own.html"
+    },
+    "record": {
+      "title": "Boulevard of Broken Dreams",
+      "artist": "Green Day",
+      "wiki": "Boulevard_of_Broken_Dreams_(Green_Day_song)",
+      "video": "HcvXW73BDaY",
+      "template": "1nnGLXrfZznusJKopZ7BAUIwGMWR48N42WoMvBM-bALY",
+      "hint": "green-day/boulevard-of-broken-dreams.html"
+    }
+  },
+  {
+    "annual": "47th",
+    "year": "2004",
+    "song": {
+      "title": "Daughters",
+      "artist": "John Mayer",
+      "wiki": "Daughters_(John_Mayer_song)",
+      "video": "Bs2DTcWutT0",
+      "template": "1CuKIwoBHdDAKPWWA7j7HTSMon6Q4hlBDorkKlp_OXlQ",
+      "hint": "john-mayer/daughters.html"
+    },
+    "record": {
+      "title": "Here We Go Again",
+      "artist": "Ray Charles & Norah Jones",
+      "wiki": "Here_We_Go_Again_(Ray_Charles_song)",
+      "video": "WCWIukoqK2Y",
+      "template": "1_0VjfQ42u6afH90rpnxeU7xolAiv1d340KzJEZn4vbI",
+      "hint": "ray-charles/here-we-go-again.html"
+    }
+  },
+  {
+    "annual": "46th",
+    "year": "2003",
+    "song": {
+      "title": "Dance with My Father",
+      "artist": "Luther Vandross",
+      "wiki": "Dance_with_My_Father_(song)",
+      "video": "NXXT9RFKO5E",
+      "template": "1ZyU8NMhCiFxaXAirRtm6KjQ4_C3uSQyv3mn9fhN0vY4",
+      "hint": "luther-vandross/dance-with-my-father.html"
+    },
+    "record": {
+      "title": "Clocks",
+      "artist": "Coldplay",
+      "wiki": "Clocks_(song)",
+      "video": "PFW2uSCZ0uE",
+      "template": "1Y0KAC9IN5iuQpPE9WibtX1ma1y9zoeGxJwYT497GBP0",
+      "hint": "coldplay/clocks.html"
+    }
+  },
+  {
+    "annual": "45th",
+    "year": "2002",
+    "song": {
+      "title": "Don't Know Why",
+      "artist": "Norah Jones",
+      "wiki": "Don't_Know_Why",
+      "video": "1LH4vnrM-Vs",
+      "template": "1QE8Y44aQDjDERLDHguzHUDYCBSctjreI1hRRBup3X5k",
+      "hint": "norah-jones/don-t-know-why.html"
+    },
+    "record": false
+  },
+  {
+    "annual": "44th",
+    "year": "2001",
+    "song": {
+      "title": "Fallin'",
+      "artist": "Alicia Keys",
+      "wiki": "Fallin'_(Alicia_Keys_song)",
+      "video": "IElaJylRDCs",
+      "template": "1pK3i2MGtoswjUBile-z70QdKBccfvBkzVrmPHUF-Egg",
+      "hint": "alicia-keys/fallin.html"
+    },
+    "record": {
+      "title": "Walk On",
+      "artist": "U2",
+      "wiki": "Walk_On_(U2_song)",
+      "video": "XblTmSQZZ60",
+      "template": "1kPH9m15XClHox1wK5ea22q1sKW2kkcQl6IopGR93zM8",
+      "hint": "u2/walk-on.html"
+    }
+  },
+  {
+    "annual": "43rd",
+    "year": "2000",
+    "song": {
+      "title": "Beautiful Day",
+      "artist": "U2",
+      "wiki": "Beautiful_Day",
+      "video": "S85ceVI4mfg",
+      "template": "15ERduK9nZm8EIp3y6PqxTCGSKSIXI8zzMrEGIBT1Gpo",
+      "hint": "u2/beautiful-day.html"
+    },
+    "record": false
+  },
+  {
+    "annual": "42nd",
+    "year": "1999",
+    "song": {
+      "title": "Smooth",
+      "artist": "Santana ft. Rob Thomas",
+      "wiki": "Smooth_(Santana_song)",
+      "video": "QcUxrpIwuQ4",
+      "template": "1rWBd0Fu2luYizoxaElVTLzpkxRzBIT8DcJtAhqK75Cg",
+      "hint": "santana/smooth.html"
+    },
+    "record": false
+  },
+  {
+    "annual": "41st",
+    "year": "1998",
+    "song": {
+      "title": "My Heart Will Go On",
+      "artist": "Celine Dion",
+      "wiki": "My_Heart_Will_Go_On",
+      "video": "mNsm2P0l_7Y",
+      "template": "1fhwGqRNLInPKV8FbCzsbaR7bE5Fhc6D5IB63ognE8EI",
+      "hint": "celine-dion/my-heart-will-go-on.html"
+    },
+    "record": false
+  },
+  {
+    "annual": "40th",
+    "year": "1997",
+    "song": {
+      "title": "Sunny Came Home",
+      "artist": "Shawn Colvin",
+      "wiki": "Sunny_Came_Home",
+      "video": "BUukUK-WS-o",
+      "template": "18vahS_WuiyzKgquJVnu7BtWPyGdubmV3bF1kn-znNWk",
+      "hint": "shawn-colvin/sunny-came-home.html"
+    },
+    "record": false
+  },
+  {
+    "annual": "39th",
+    "year": "1996",
+    "song": {
+      "title": "Change the World",
+      "artist": "Eric Clapton",
+      "wiki": "Change_the_World",
+      "video": "7olhO3LbCqI",
+      "template": "1d9ukQ5neiHgd1wj1fB89kXUqZPgbwJkvhqbB-PKyX8c",
+      "hint": "eric-clapton/change-the-world.html"
+    },
+    "record": false
+  }
+];
+
+for (i = 0; i < data.length; i++) {
+  if (15 < i) {
+var template = `
+	<h1 align="center">${data[i].annual} Annual GRAMMY Awards (${data[i].year})</h1>
+	<div style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+		<div style="display: flex; flex-direction: column; align-items: center;">
+			<h2>${data[i].record ? `Song of the Year` : `Song of the Year & Record of the Year`}</h2>
+			<a rel="noopener" href="https://en.wikipedia.org/wiki/${data[i].song.wiki}">"${data[i].song.title}" - ${data[i].song.artist}</a>
+			<iframe style="margin: 1em;" width="250" height="175" src="https://www.youtube-nocookie.com/embed/${data[i].song.video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      <div>
+			  <a rel="noopener" href="https://docs.google.com/drawings/d/${data[i].song.template}/edit?">Soundstage Template</a>
+        ${data[i].song.hint ? ` | <a el="noopener" href="https://www.karaoke-version.com/custombackingtrack/${data[i].song.hint}">Instrument Hint</a>`: ``}
+      </div>
+		</div>
+		${data[i].record ? `
+      <div style="display: flex; flex-direction: column; align-items: center;">
+				<h2>Record of the Year</h2>
+				<a rel="noopener" href="https://en.wikipedia.org/wiki/${data[i].record.wiki}">"${data[i].record.title}" - ${data[i].record.artist}</a>
+				<iframe style="margin: 1em;" width="250" height="175" src="https://www.youtube-nocookie.com/embed/${data[i].record.video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        <div>
+				<a rel="noopener" href="https://docs.google.com/drawings/d/${data[i].record.template}/edit?">Soundstage Template</a>
+        ${data[i].record.hint ? ` | <a el="noopener" href="https://www.karaoke-version.com/custombackingtrack/${data[i].record.hint}">Instrument Hint</a>`: ``}
+        </div>
+      </div> 
+    ` : ``}	
+	</div>
+	<h1 align="center">Activity</h1>
+	<ol>
+		<li>Listen to either the <i>Song of the Year</i> or <i>Record of the Year</i> winner from the given year above.</li>
+		<li>While listening, use the Soundstage Template (located above, under each song) to map the instruments onto the soundstage. <i>(Note: This works better on a computer.)</i></li>
+		<li>When you finish the Soundstage Diagram, click <i>File -&gt; Download -&gt; JPEG image (.jpg)</i>.</li>
+		<li>On eCLASS, click <i>Start a New Thread</i> and title it as ["Title of Song" - Artist].</li>
+		<li>Attach the image to the body of your by clicking on the Camera Icon, then find your downloaded Soundstage Diagram, and then check the box that says "This image is decorative."</li>
+		<li>In the body of the post, please answer the following questions in complete sentences. <i>(Note: Reading the Wikipedia page may help you answer #3 and #4.)</i>
+			<ol>
+				<li><b>Describe</b> what you hear in the song.</li>
+				<li><b>Analyze</b> what</li>
+				<li><b>Interpret</b> what you think the writer/artist was trying to say with this song.</li>
+				<li><b>Evaluate</b> whether you feel as though the song was successful in conveying this?</li>
+			</ol>
+		</li>
+	</ol>
+`;
+	document.getElementById("container").innerHTML += template;
+  }
+};
+</script>
